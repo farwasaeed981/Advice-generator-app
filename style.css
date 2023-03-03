@@ -1,0 +1,61 @@
+:root{
+    --primary-color: hsl(150, 100%, 66%);
+    --text-color: hsl(193, 38%, 86%);
+    --bg-primary:hsl(218, 23%, 16%);
+    --bg-secondary:hsl(217, 19%, 24%);
+    --font-family:"Manrope";
+    --font-size: 28px;
+    --font-weight:800;
+}
+body{
+    background-color: var(--bg-primary);
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: var(--font-size);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-secondary);
+    padding: 2.5rem 2rem 1rem;
+    max-width: 500px;
+    border-radius: 20px;
+}
+.advice-tag{
+    font-size: 15px;
+    color: var(--primary-color);
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.blockquote{
+    margin: 1.5rem 0 2rem;
+    font-size: var(--font-size);
+    font-weight: 700;
+}
+img{
+    display: block;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn{
+    background-color: var(--text-color);
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    transform:translateY(40px);
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 0 21px -2px var(--primary-color);
+}
